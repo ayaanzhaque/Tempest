@@ -115,14 +115,12 @@ input[type="file"] {
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
 					<h2>Upload Images</h2>
 					<p>Upload two aeriel images of a location you want to prepare for clean up. Upload an image before flooding and an image after flooding, and we will generate an image for you on what the land will look like once the water receeds. This allows you as a city planner to make more informed decisions on how to properly rebuild.</p>
+					<p>Please allow some time to let the model process the uploaded images.</p>
 					<center>
-					<label for="file-upload" class="btn btn-primary btn-lg btn-learn">Upload Before</label>
-				    <input id="file-upload" type="file"/>
-						<label for="file-upload" class="btn btn-primary btn-lg btn-learn">Upload After</label>
-					    <input id="file-upload" type="file"/>
+						<div style="width: 100%; height: 300px; overflow: hidden">
+							<iframe src="https://tempestai.pythonanywhere.com/" width="100%" height="1000px" frameBorder="0" id='givenIframe' scrolling="no"></iframe>
+						</div>
 						</center>
-						<h2></h2>
-						<label for="file-upload" class="btn btn-primary btn-lg btn-learn">Submit</label>
 				</div>
 			</div>
 
