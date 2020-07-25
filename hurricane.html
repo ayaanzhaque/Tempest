@@ -39,6 +39,8 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="images/images.png"/>
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -67,7 +69,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="tornadoes.html">Tornadoes</a></li>
 							<li class="active"><a href="hurricane.html">Hurricane</a></li>
-							<li><a href="hurricanevisualization.html">Aftermath</a></li>
+							<li><a href="aftermath.html">Aftermath</a></li>
 							<li><a href="datavisualization.html">Data Visualization</a></li>
 						</ul>
 					</div>
@@ -96,6 +98,13 @@
 		  	</ul>
 	  	</div>
 	</aside>
+
+	<center>
+		<!--  scrolling="no" -->
+	<div style="width: 90%; height: 1000px; overflow: hidden">
+		<iframe src="hiddenhtml/dummyWeather.html" width="100%" height="1000px" frameBorder="0" id='givenIframe' scrolling="no"></iframe>
+	</div>
+	</center>
 
 	<div id="ftco-practice" class="site-section">
 		<div class="container">
@@ -244,23 +253,6 @@
 		</div>
 	</div>
 
-
-	<div id="intro-bg">
-		<div class="container">
-			<div id="ftco-intro" style="position: relative; margin-bottom: -150px!important;">
-				<div class="third-col">
-					<h2 class="h3">Need Legal Services?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-				<div class="third-col third-col-color">
-					<h2 class="h3">Call now (+1) 123-456-7890</h2>
-					<p>Email us at <a href="#" target="_blank">info@yourwebsite.com</a></p>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<footer id="ftco-footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-pb-md">
@@ -272,9 +264,9 @@
 					<h4>Navigation</h4>
 					<ul class="ftco-footer-links">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="tornadoesmag.html">Tornado Magnitude</a></li>
-						<li><a href="tornadoesafter.html">Tornado Aftermath</a></li>
-						<li><a href="hurricane.html">Hurricane Magnitude</a></li>
+						<li><a href="tornadoes.html">Tornados</a></li>
+						<li><a href="hurricane.html">Hurricanes</a></li>
+						<li><a href="aftermath.html">Aftermath</a></li>
 						<li><a href="datavisualization.html">Data Visualization</a></li>
 					</ul>
 				</div>
