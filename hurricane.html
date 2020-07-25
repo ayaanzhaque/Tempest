@@ -105,12 +105,16 @@
 		<iframe src="hiddenhtml/dummyWeather.html" width="100%" height="1000px" frameBorder="0" id='givenIframe' scrolling="no"></iframe>
 	</div>
 	</center>
-	<center>
 
-	<div class="col-md-6 pr-md-5">
+	<br><br><br>
+<div class='container'>
+
+	<div class="row animate-box">
+		<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
+			<h2>View Hurricane Details</h2>
+			<p>@yaanhaque @adithya_sp @ishaan.bhandari duck urself</p>
 
 	            <form action="#">
-
 								<div class="form-group">
 	                <select class="form-control" id="biologicalsexstatus">
 	                  <option value="volvo">*Choose Location*</option>
@@ -118,57 +122,12 @@
 	                  <option value="saab">Hurricane Hanna</option>
 	                  <option value="fiat">Hurricane Gonzalez</option>
 									</select>
-								</center>
-
 	              </div>
-
-	  <script>
-	              function testSubmitFunction() {
-
-	                var a = document.getElementById("biologicalsexstatus");
-	                var textOne = a.options[a.selectedIndex].text;
-	                if (textOne == "*Choose Location*") {
-	                document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
-	                        document.getElementById("hometown").style.display = "block";
-	                        document.getElementById("imagetown").style.display = "none";
-	                        document.getElementById("mapAppear").style.display = "none";
-	              } else if (textOne == "Hurricane Douglas") {
-	                document.getElementById("hometown").style.display = "none";
-	                document.getElementById("imagetown1").style.display = "block";
-	                document.getElementById("mapAppear").style.display = "none";
-	              } else if (textOne == "Hurricane Hanna") {
-
-	                        document.getElementById("hometown").style.display = "block";
-	                        document.getElementById("imagetown1").style.display = "none";
-	                        document.getElementById("mapAppear").style.display = "none";
-	              } else if (textOne == "Hurricane Gonzalez") {
-	                        document.getElementById("hometown").style.display = "none";
-	                        document.getElementById("imagetown1").style.display = "none";
-	                        document.getElementById("mapAppear").style.display = "block";
-
-	              } else if (textOne == "Houston, TX") {
-	                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-	                        document.getElementById("hometown").style.display = "block";
-	                        document.getElementById("imagetown").style.display = "none";
-	                        document.getElementById("mapAppear").style.display = "none";
-
-	              }
-
-
-
-
-
-	            }
-
-	          </script>
-
-	                    </div>
-
-
-	  <button class="btn btn-primary py-3 px-5" type="button" onClick="testSubmitFunction()">Confirm</button>
-
+	  <button class="btn btn-primary btn-lg btn-learn" type="button" onClick="testSubmitFunction()">Confirm</button>
 	            </form>
-	<br><br>
+						</div>
+					</div>
+				</div>
 
 	            <div id="hometown" style="display: none">
 								<center>
@@ -458,6 +417,47 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+
+<script>
+						function testSubmitFunction() {
+
+							var a = document.getElementById("biologicalsexstatus");
+							var textOne = a.options[a.selectedIndex].text;
+							if (textOne == "*Choose Location*") {
+							document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+						} else if (textOne == "Hurricane Douglas") {
+							document.getElementById("hometown").style.display = "none";
+							document.getElementById("imagetown1").style.display = "block";
+							document.getElementById("mapAppear").style.display = "none";
+						} else if (textOne == "Hurricane Hanna") {
+
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown1").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+						} else if (textOne == "Hurricane Gonzalez") {
+											document.getElementById("hometown").style.display = "none";
+											document.getElementById("imagetown1").style.display = "none";
+											document.getElementById("mapAppear").style.display = "block";
+
+						} else if (textOne == "Houston, TX") {
+							document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+
+						}
+
+
+
+
+
+					}
+
+				</script>
+
 
 	</body>
 </html>
