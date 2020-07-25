@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tempest &mdash; Website Template by Colorlib</title>
+	<title>Tempest</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Facebook and Twitter integration -->
@@ -105,6 +105,148 @@
 		<iframe src="hiddenhtml/dummyWeather.html" width="100%" height="1000px" frameBorder="0" id='givenIframe' scrolling="no"></iframe>
 	</div>
 	</center>
+	<center>
+
+	<div class="col-md-6 pr-md-5">
+
+	            <form action="#">
+
+								<div class="form-group">
+	                <select class="form-control" id="biologicalsexstatus">
+	                  <option value="volvo">*Choose Location*</option>
+	                  <option value="volvo">Hurricane Douglas</option>
+	                  <option value="saab">Hurricane Hanna</option>
+	                  <option value="fiat">Hurricane Gonzalez</option>
+									</select>
+								</center>
+
+	              </div>
+
+	  <script>
+	              function testSubmitFunction() {
+
+	                var a = document.getElementById("biologicalsexstatus");
+	                var textOne = a.options[a.selectedIndex].text;
+	                if (textOne == "*Choose Location*") {
+	                document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
+	                        document.getElementById("hometown").style.display = "block";
+	                        document.getElementById("imagetown").style.display = "none";
+	                        document.getElementById("mapAppear").style.display = "none";
+	              } else if (textOne == "Hurricane Douglas") {
+	                document.getElementById("hometown").style.display = "none";
+	                document.getElementById("imagetown1").style.display = "block";
+	                document.getElementById("mapAppear").style.display = "none";
+	              } else if (textOne == "Hurricane Hanna") {
+
+	                        document.getElementById("hometown").style.display = "block";
+	                        document.getElementById("imagetown1").style.display = "none";
+	                        document.getElementById("mapAppear").style.display = "none";
+	              } else if (textOne == "Hurricane Gonzalez") {
+	                        document.getElementById("hometown").style.display = "none";
+	                        document.getElementById("imagetown1").style.display = "none";
+	                        document.getElementById("mapAppear").style.display = "block";
+
+	              } else if (textOne == "Houston, TX") {
+	                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+	                        document.getElementById("hometown").style.display = "block";
+	                        document.getElementById("imagetown").style.display = "none";
+	                        document.getElementById("mapAppear").style.display = "none";
+
+	              }
+
+
+
+
+
+	            }
+
+	          </script>
+
+	                    </div>
+
+
+	  <button class="btn btn-primary py-3 px-5" type="button" onClick="testSubmitFunction()">Confirm</button>
+
+	            </form>
+	<br><br>
+
+	            <div id="hometown" style="display: none">
+								<center>
+									<img class = "heatmapstyle" src="images/Hanna.png" alt="Italian Trulli" width="20%">
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<p></p>
+									<h2> Hurricane Hanna </h2>
+									<p>Category: Category 3 </p>
+									<p>Max Wind Speeds: 40-50 Knots, 45-55 mph</p>
+									<p>Potential Damage/Costs as Predicted by Model: $2-3 Billion </p>
+								</center>
+
+	                            </div>
+						<div id="mapAppear" style="display: none">
+							<center>
+								<img class = "heatmapstyle" src="images/gonzalez.png" alt="Italian Trulli" width="20%">
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<h2> Hurricane Gonzalez </h2>
+								<p>Category: Category 1 </p>
+								<p>Max Wind Speeds: 40-50 Knots, 45-55 mph</p>
+								<p>Potential Damage/Costs as Predicted by Model: $100 Million </p>
+							</center>
+						</div>
+
+	          <div id="imagetown1" style="display: none">
+
+	            <style>
+	            .heatmapstyle {
+	              width:75%
+	            }
+	            </style>
+							<center>
+								<img class = "heatmapstyle" src="images/Douglas.png" alt="Italian Trulli" width="20%">
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<h2> Hurricane Douglas </h2>
+								<p>Category: Category 4 </p>
+								<p>Max Wind Speeds: 50-60 Knots, 60-70 mph</p>
+								<p>Potential Damage/Costs as Predicted by Model: $90-125 Billion </p>
+							</center>
+
+	              <style>
+	              .addingpthing {
+	                border: 1px solid purple;
+	              }
+
+	              </style>
+
+	                  </div>
+
+
+	      </center>
+
+
+
+	    <style>
+	    .hometown {
+
+	    text-align: center;
+	    color: #000000;
+	    border: 1px solid red;
+	    display: block;
+	    }
+
+	    </style>
 
 	<div id="ftco-practice" class="site-section">
 		<div class="container">
