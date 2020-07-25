@@ -135,11 +135,64 @@ input[type="file"] {
 					<p>Once your city has inputted images and we have rendered aftermath images, choose your city to get a better understanding on how to properly approach clean up and the property damage.</p>
 
 				</div>
+				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
+
+				<h2> New Orleans, LA </h2>
+			</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood1.png" name="saveForm" onclick='durham();' id="durhamPic" />
+
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood2.png" name="saveForm" onclick='slc();'  id="slcPic" />
+
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood3.png" name="saveForm" onclick='orlando();'  id="orlandoPic" />
+
+						</div>
+					</div>
+					<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
+
+					<h2>  </h2>
+				</div>
+					<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
+
+					<h2> Atlanta, GA </h2>
+				</div>
+					<center>
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood4.png" name="saveForm" onclick='orlando();'  id="orlandoPic" />
+
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood5.png" name="saveForm" onclick='durham();' id="durhamPic" />
+
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+						<div class="ftco-staff">
+							<input type="image" src="images/flood6.png" name="saveForm" onclick='durham();' id="durhamPic" />
+
+						</div>
+					</div>
+
+				</center>
+				</div>
 <center>
 				<form action="#">
 					<div class="form-group">
 						<select class="form-control" id="biologicalsexstatus">
-							<option value="volvo">*Choose City*</option>
+							<option value="volvo">*Cities Coming Soon*</option>
 							<option value="volvo">Salt Lake City, UT</option>
 							<option value="saab">San Jose, CA</option>
 							<option value="fiat">Los Angeles, CA</option>
@@ -147,8 +200,43 @@ input[type="file"] {
 						</select>
 					</div>
 				</form>
-				<p><a class="btn btn-primary btn-lg btn-learn" onclick='testSubmitFunction();' target="_blank">Submit</a></p>
-				</center>
+				<script>
+						function testSubmitFunction() {
+
+							var a = document.getElementById("biologicalsexstatus");
+							var textOne = a.options[a.selectedIndex].text;
+							if (textOne == "*Choose Location*") {
+							document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+						} else if (textOne == "Salt Lake City, UT") {
+							document.getElementById("hometown").style.display = "none";
+							document.getElementById("imagetown").style.display = "block";
+							document.getElementById("mapAppear").style.display = "block";
+						} else if (textOne == "San Jose, CA") {
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+						} else if (textOne == "Los Angeles, CA") {
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+
+						} else if (textOne == "Houston, TX") {
+											document.getElementById("hometown").style.display = "block";
+											document.getElementById("imagetown").style.display = "none";
+											document.getElementById("mapAppear").style.display = "none";
+
+						}
+
+
+
+
+
+					}
+
+				</script>
 
 			</div>
 			<div id="hometown" style="display: none">
@@ -156,6 +244,39 @@ input[type="file"] {
 			          <p class="hometown" id="htmlRandomNumber"></p>
 							</center>
 			            </div>
+									<div id="imagetown" style="display: none">
+
+            <style>
+            .heatmapstyle {
+              width:75%
+            }
+            </style>
+              <img class = "heatmapstyle" src="images/flood1.png" alt="Italian Trulli">
+
+              <style>
+              .addingpthing {
+                border: 1px solid purple;
+              }
+
+              </style>
+
+
+                  </div>
+
+      </center>
+
+
+
+    <style>
+    .hometown {
+
+    text-align: center;
+    color: #000000;
+    border: 1px solid red;
+    display: block;
+    }
+
+    </style>
 
 		</div>
 	</div>
