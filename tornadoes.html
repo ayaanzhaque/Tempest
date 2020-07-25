@@ -101,10 +101,97 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-					<h2>Tornado Magnitude</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					<h2>Find Damage Information On Upcoming Tornadoes</h2>
+					<p>Choose your city to find the crash hotspots in your city so you can make informed decisions. This is hourly updated and is accurate with the time of year.</p>
+					<div class="container">
+						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
+  					<div class="centered">Tornado Blank</div>
+					</div>
+					<div class="container">
+						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
+  					<div class="centered">Tornado Blank</div>
+					</div>
+					<div class="container">
+						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
+  					<div class="centered">Tornado Blank</div>
+					</div>
+
+						<script>
+              function testSubmitFunction() {
+
+                var a = document.getElementById("image");
+								document.getElementById("hometown").style.display = "none";
+                document.getElementById("imagetown").style.display = "block";
+                document.getElementById("mapAppear").style.display = "block";
+                var textOne = a.options[a.selectedIndex].text;
+                if (textOne == "Salt Lake City, UT") {
+                document.getElementById("hometown").style.display = "none";
+                document.getElementById("imagetown").style.display = "block";
+                document.getElementById("mapAppear").style.display = "block";
+              } else if (textOne == "San Jose, CA") {
+                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                        document.getElementById("hometown").style.display = "block";
+                        document.getElementById("imagetown").style.display = "none";
+                        document.getElementById("mapAppear").style.display = "none";
+              } else if (textOne == "Los Angeles, CA") {
+                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                        document.getElementById("hometown").style.display = "block";
+                        document.getElementById("imagetown").style.display = "none";
+                        document.getElementById("mapAppear").style.display = "none";
+
+              } else if (textOne == "Houston, TX") {
+                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                        document.getElementById("hometown").style.display = "block";
+                        document.getElementById("imagetown").style.display = "none";
+                        document.getElementById("mapAppear").style.display = "none";
+
+              }
+
+            }
+
+          </script>
+
 				</div>
 			</div>
+			<div id="hometown" style="display: none">
+
+                                <p class="hometown" id="htmlRandomNumber"></p>
+                            </div>
+
+          <div id="imagetown" style="display: none">
+
+            <style>
+            .heatmapstyle {
+              width:75%
+            }
+            </style>
+              <img class = "heatmapstyle" src="images/user-1.jpg" alt="Italian Trulli" style="width:20%;">
+
+              <style>
+              .addingpthing {
+                border: 1px solid purple;
+              }
+
+              </style>
+
+              <p class="addingpthing">Look to the map below to see why we flagged locations as risky.</p>
+                  </div>
+
+      </center>
+
+
+
+    <style>
+    .hometown {
+
+    text-align: center;
+    color: #000000;
+    border: 1px solid red;
+    display: block;
+    }
+
+    </style>
+
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
