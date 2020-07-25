@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tempest &mdash; Website Template by Colorlib</title>
+	<title>Tempest &mdash; Tornado</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Facebook and Twitter integration -->
@@ -97,191 +97,65 @@
 	  	</div>
 	</aside>
 
-	<div class="ftco-practice">
+	<div id="ftco-about">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
 					<h2>Find Damage Information On Upcoming Tornadoes</h2>
 					<p>Choose your city to find the crash hotspots in your city so you can make informed decisions. This is hourly updated and is accurate with the time of year.</p>
-					<div class="container">
-						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
-  					<div class="centered">Tornado Blank</div>
-					</div>
-					<div class="container">
-						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
-  					<div class="centered">Tornado Blank</div>
-					</div>
-					<div class="container">
-						<input type="image" id="image" alt="Login" src="images/user-1.jpg" onclick="testSubmitFunction()" style="width:20%;">
-  					<div class="centered">Tornado Blank</div>
-					</div>
-
-						<script>
-              function testSubmitFunction() {
-
-                var a = document.getElementById("image");
-								document.getElementById("hometown").style.display = "none";
-                document.getElementById("imagetown").style.display = "block";
-                document.getElementById("mapAppear").style.display = "block";
-                var textOne = a.options[a.selectedIndex].text;
-                if (textOne == "Salt Lake City, UT") {
-                document.getElementById("hometown").style.display = "none";
-                document.getElementById("imagetown").style.display = "block";
-                document.getElementById("mapAppear").style.display = "block";
-              } else if (textOne == "San Jose, CA") {
-                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-                        document.getElementById("hometown").style.display = "block";
-                        document.getElementById("imagetown").style.display = "none";
-                        document.getElementById("mapAppear").style.display = "none";
-              } else if (textOne == "Los Angeles, CA") {
-                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-                        document.getElementById("hometown").style.display = "block";
-                        document.getElementById("imagetown").style.display = "none";
-                        document.getElementById("mapAppear").style.display = "none";
-
-              } else if (textOne == "Houston, TX") {
-                document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-                        document.getElementById("hometown").style.display = "block";
-                        document.getElementById("imagetown").style.display = "none";
-                        document.getElementById("mapAppear").style.display = "none";
-
-              }
-
-            }
-
-          </script>
-
 				</div>
 			</div>
-			<div id="hometown" style="display: none">
 
-                                <p class="hometown" id="htmlRandomNumber"></p>
-                            </div>
-
-          <div id="imagetown" style="display: none">
-
-            <style>
-            .heatmapstyle {
-              width:75%
-            }
-            </style>
-              <img class = "heatmapstyle" src="images/user-1.jpg" alt="Italian Trulli" style="width:20%;">
-
-              <style>
-              .addingpthing {
-                border: 1px solid purple;
-              }
-
-              </style>
-
-              <p class="addingpthing">Look to the map below to see why we flagged locations as risky.</p>
-                  </div>
-
-      </center>
-
-
-
-    <style>
-    .hometown {
-
-    text-align: center;
-    color: #000000;
-    border: 1px solid red;
-    display: block;
-    }
-
-    </style>
 
 			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-courthouse"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Real Estate Law</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
+				<div class="col-md-3 col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="ftco-staff">
+						<input type="image" src="images/team/ayaanpic.png" name="saveForm" onclick='durham();' id="durhamPic" />
+						<h3>Ayaan Haque</h3>
+						<strong class="role">Fullstack, Backend</strong>
+
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-padlock"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Insurance Law</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
+				<div class="col-md-3 col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="ftco-staff">
+						<input type="image" src="images/team/ayaanpic.png" name="saveForm" onclick='slc();' id="slcPic" />
+						<h3>Viraaj Reddi</h3>
+						<strong class="role">Fullstack, Backend</strong>
+
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-folder"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Business Law</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
+				<div class="col-md-3 col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="ftco-staff">
+						<input type="image" src="images/team/ayaanpic.png" name="saveForm" onclick='orlando();' id="orlandoPic" />
+						<h3>Adithya Peruvemba</h3>
+						<strong class="role">Frontend, UI Developer</strong>
+
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-handcuffs"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Personal Injury</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
+				<div class="col-md-3 col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="ftco-staff">
+						<input type="image" src="images/team/ayaanpic.png" name="saveForm" onclick='nop();' id="okcPic" />
+						<h3>Ishaan Bhandari</h3>
+						<strong class="role">Frontend, UI Developer</strong>
+
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-handcuffs"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Medical Neglegence</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-libra"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Criminal Defense</a></h3>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-						</div>
-					</div>
-				</div>
+
 
 			</div>
 		</div>
+
+	<!-- add hidden elements here -->
+		<center>
+		<div id="hometown" style="display: none;">
+
+				<p>testing this out</p>
+
+					</div>
+						</center>
+
 	</div>
 
-
-
-
-	<div id="intro-bg">
-		<div class="container">
-			<div id="ftco-intro" style="position: relative; margin-bottom: -150px!important;">
-				<div class="third-col">
-					<h2 class="h3">Need Legal Services?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-				<div class="third-col third-col-color">
-					<h2 class="h3">Call now (+1) 123-456-7890</h2>
-					<p>Email us at <a href="#" target="_blank">info@yourwebsite.com</a></p>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<footer id="ftco-footer" role="contentinfo">
 		<div class="container">
@@ -346,6 +220,54 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+</script>
+
+<script>
+function durham() {
+
+	if(document.getElementById("hometown").style.display == "block") {
+		document.getElementById("hometown").style.display = "none";
+
+	} else {
+		document.getElementById("hometown").style.display = "block";
+
+	}
+
+}
+
+function slc() {
+
+	if(document.getElementById("hometown").style.display == "block") {
+		document.getElementById("hometown").style.display = "none";
+
+	} else {
+		document.getElementById("hometown").style.display = "block";
+
+	}
+}
+
+function orlando() {
+
+	if(document.getElementById("hometown").style.display == "block") {
+		document.getElementById("hometown").style.display = "none";
+
+	} else {
+		document.getElementById("hometown").style.display = "block";
+
+	}
+}
+
+function nop() {
+
+	if(document.getElementById("hometown").style.display == "block") {
+		document.getElementById("hometown").style.display = "none";
+
+	} else {
+		document.getElementById("hometown").style.display = "block";
+
+	}
+}
+
 </script>
 
 	</body>
