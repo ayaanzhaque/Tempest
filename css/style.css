@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, figure {
             width: 0;
             position: absolute;
             pointer-events: none;
-            border-bottom-color: #2f89fc;
+            border-bottom-color: #fff;
             border-width: 8px;
             margin-left: -8px; }
           .ftco-nav ul li.has-dropdown .dropdown li {
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7); }
+    background: #0b162b; }
 
 .ftco-video {
   overflow: hidden; }
@@ -535,48 +535,54 @@ h1, h2, h3, h4, h5, h6, figure {
       font-size: 200px;
       color: rgba(255, 255, 255, 0.05); }
 
-.services {
-  position: relative;
-  padding: 30px;
-  margin-bottom: 60px;
-  background: #3f52e3;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
-  .services strong {
-    font-weight: normal;
-    color: #000; }
-  .services h3 {
-    font-weight: 400; }
-    .services h3 a {
-      color: #3f52e3; }
-  .services .icon {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    display: table;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .services .icon i {
-      display: table-cell;
-      vertical-align: middle;
-      height: 70px;
-      font-size: 60px;
-      line-height: 40px;
-      color: #3f52e3; }
-  .services:hover, .services:focus {
-    background: #3f52e3;
-    color: rgba(255, 255, 255, 0.7); }
-    .services:hover h3 a, .services:focus h3 a {
-      color: #fff; }
-    .services:hover .icon i, .services:focus .icon i {
-      color: #fff; }
-    .services:hover strong, .services:focus strong {
-      color: #fff; }
+      .services {
+        position: relative;
+        padding: 30px;
+        margin-bottom: 60px;
+        background: #3f52e3;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .services strong {
+          font-weight: normal;
+          color: #000; }
+        .services h3 {
+          font-weight: 400; }
+          .services p {
+            color: fff;
+          }
+          .services h3 a {
+            color: #fff; }
+        .services .icon {
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 70px;
+          height: 70px;
+          display: table;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          .services .icon i {
+            display: table-cell;
+            vertical-align: middle;
+            height: 70px;
+            font-size: 60px;
+            line-height: 40px;
+            color: #fff; }
+        .services:hover, .services:focus {
+          background: #fff;
+          color: #3f52e3; }
+          .services:hover h3 a, .services:focus h3 a {
+            color: #3f52e3; }
+          .services:hover p {
+            color: #3f52e3;
+          }
+          .services:hover .icon i, .services:focus .icon i {
+            color: #3f52e3; }
+          .services:hover strong, .services:focus strong {
+            color: #3f52e3; }
 
 .ftco-social-icons {
   margin: 0;
