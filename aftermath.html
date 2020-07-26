@@ -48,10 +48,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
-
-
 	</head>
+
+
 	<body>
 
 	<div class="ftco-loader"></div>
@@ -133,211 +132,175 @@ input[type="file"] {
 					<p>Once your city has inputted images and we have rendered aftermath images, choose your city to get a better understanding on how to properly approach clean up and the property damage.</p>
 
 				</div>
+
+				<!-- DROPDOWN MENU -->
+				              <form action="#">
+				                <div class="form-group">
+				                  <select class="form-control" id="biologicalsexstatus">
+				                    <option value="volvo">*Cities*</option>
+				                    <option value="volvo">New Orleans, LA</option>
+				                    <option value="saab">Atlanta, GA</option>
+				                    <option value="fiat">Austin, TX (Coming Soon)</option>
+				                    <option value="audi">Miami, FL (Coming Soon)</option>
+				                  </select>
+				                </div>
+											</form>
+											<center>
+<input type="submit" class="btn btn-primary btn-lg btn-learn" onclick='testSubmitFunction();' value="Submit">
+</center>
+		<!-- JS FOR DROPDOWN MENU -->
+		<script>
+      function testSubmitFunction() {
+
+        var a = document.getElementById("biologicalsexstatus");
+        var textOne = a.options[a.selectedIndex].text;
+
+        if (textOne == "*Cities*") {
+
+				document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete.";
+								document.getElementById("hometown").style.display = "block";
+								document.getElementById("newOrleans").style.display = "none";
+								document.getElementById("atlantaGA").style.display = "none";
+
+
+			} else if (textOne == "New Orleans, LA") {
+
+							document.getElementById("hometown").style.display = "none";
+
+							document.getElementById("newOrleans").style.display = "block";
+							document.getElementById("atlantaGA").style.display = "none";
+
+			} else if (textOne == "Atlanta, GA") {
+
+        document.getElementById("hometown").style.display = "none";
+
+				document.getElementById("newOrleans").style.display = "none";
+				document.getElementById("atlantaGA").style.display = "block";
+
+			} else if (textOne == "Austin, TX (Coming Soon)") {
+        document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+				document.getElementById("hometown").style.display = "block";
+
+				document.getElementById("newOrleans").style.display = "none";
+				document.getElementById("atlantaGA").style.display = "none";
+
+		  } else if (textOne == "Miami, FL (Coming Soon)") {
+        document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+				document.getElementById("hometown").style.display = "block";
+
+				document.getElementById("newOrleans").style.display = "none";
+				document.getElementById("atlantaGA").style.display = "none";
+      }
+
+    }
+		            </script>
+
+
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
 
+<br><br>
+<!-- NEW ORLEANS -->
+<div class="newOrleans" id='newOrleans'>
 				<h2> New Orleans, LA </h2>
-			</div>
 			<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 			<h3> During Flood</h3>
 		</div>
 			<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 				<div class="ftco-staff">
 					<input type="image" src="images/before1.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 				</div>
 			</div><div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 				<div class="ftco-staff">
 					<input type="image" src="images/before2.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 				</div>
 			</div><div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 				<div class="ftco-staff">
 					<input type="image" src="images/before3.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 				</div>
 			</div>
 			<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
-
 		</div>
 			<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 			<h3> Predicted After Flood</h3>
 		</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood1.png" name="saveForm" onclick='durham();' id="durhamPic" />
-
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood2.png" name="saveForm" onclick='slc();'  id="slcPic" />
-
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood3.png" name="saveForm" onclick='orlando();'  id="orlandoPic" />
-
 						</div>
 					</div>
 					<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 					<h2>  </h2>
 				</div>
-					<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
+			</div>
+			</div>
 
+<br><br>
+<!-- ATLANTA -->
+			<div class='atlantaGA' id='atlantaGA'>
+					<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
 					<h2> Atlanta, GA </h2>
 				</div>
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 				<h3> During Flood</h3>
 			</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="ftco-staff">
 						<input type="image" src="images/before4.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 					</div>
 				</div><div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="ftco-staff">
 						<input type="image" src="images/before5.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 					</div>
 				</div><div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="ftco-staff">
 						<input type="image" src="images/before6.jpg" name="saveForm" onclick='durham();' id="durhamPic" />
-
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 				<h2>  </h2>
 			</div>
 				<div class="col-md-8 col-md-offset-2 text-center ftco-heading">
-
 				<h3> Predicted After Flood</h3>
 			</div>
 					<center>
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood4.png" name="saveForm" onclick='orlando();'  id="orlandoPic" />
-
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood5.png" name="saveForm" onclick='durham();' id="durhamPic" />
-
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 						<div class="ftco-staff">
 							<input type="image" src="images/flood6.png" name="saveForm" onclick='durham();' id="durhamPic" />
-
 						</div>
 					</div>
-
 				</center>
-				</div>
-<center>
-				<form action="#">
-					<h2>Upcoming Cities</h2>
-					<div class="form-group">
-						<select class="form-control" id="biologicalsexstatus">
-							<option value="volvo">*Cities Coming Soon*</option>
-							<option value="volvo">Tampa Bay, FL</option>
-							<option value="saab">Austin, TX</option>
-							<option value="fiat">Jersey City, NJ</option>
-							<option value="audi">Miami, Florida</option>
-						</select>
-					</div>
-				</form>
-				<script>
-						function testSubmitFunction() {
-
-							var a = document.getElementById("biologicalsexstatus");
-							var textOne = a.options[a.selectedIndex].text;
-							if (textOne == "*Choose Location*") {
-							document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
-											document.getElementById("hometown").style.display = "block";
-											document.getElementById("imagetown").style.display = "none";
-											document.getElementById("mapAppear").style.display = "none";
-						} else if (textOne == "Salt Lake City, UT") {
-							document.getElementById("hometown").style.display = "none";
-							document.getElementById("imagetown").style.display = "block";
-							document.getElementById("mapAppear").style.display = "block";
-						} else if (textOne == "San Jose, CA") {
-											document.getElementById("hometown").style.display = "block";
-											document.getElementById("imagetown").style.display = "none";
-											document.getElementById("mapAppear").style.display = "none";
-						} else if (textOne == "Los Angeles, CA") {
-											document.getElementById("hometown").style.display = "block";
-											document.getElementById("imagetown").style.display = "none";
-											document.getElementById("mapAppear").style.display = "none";
-
-						} else if (textOne == "Houston, TX") {
-											document.getElementById("hometown").style.display = "block";
-											document.getElementById("imagetown").style.display = "none";
-											document.getElementById("mapAppear").style.display = "none";
-
-						}
-
-
-
-
-
-					}
-
-				</script>
-
 			</div>
-			<div id="hometown" style="display: none">
-							<center>
-			          <p class="hometown" id="htmlRandomNumber"></p>
-							</center>
-			            </div>
-									<div id="imagetown" style="display: none">
-
-            <style>
-            .heatmapstyle {
-              width:75%
-            }
-            </style>
-              <img class = "heatmapstyle" src="images/flood1.png" alt="Italian Trulli">
-
-              <style>
-              .addingpthing {
-                border: 1px solid purple;
-              }
-
-              </style>
-
-
-                  </div>
-
-      </center>
-
-
-
-    <style>
-    .hometown {
-
-    text-align: center;
-    color: #000000;
-    border: 1px solid red;
-    display: block;
-    }
-
-    </style>
-
 		</div>
 	</div>
+</div>
+
+<div id="hometown" style="display: none;">
+      <p class="hometown" id="htmlRandomNumber"></p>
+        </div>
 
 
-
+<!-- FOOTER -->
 	<footer id="ftco-footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-pb-md">
@@ -402,37 +365,7 @@ input[type="file"] {
 </script>
 
 <!-- script for dropdown menu -->
-<script>
-						 function testSubmitFunction() {
 
-							 var a = document.getElementById("biologicalsexstatus");
-							 var textOne = a.options[a.selectedIndex].text;
-
-							 if (textOne == "*Choose City*") {
-							 document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
-											document.getElementById("hometown").style.display = "block";
-						 } else if (textOne == "Salt Lake City, UT") {
-							 document.getElementById("hometown").style.display = "none";
-						 } else if (textOne == "San Jose, CA") {
-							 document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-											document.getElementById("hometown").style.display = "block";
-						 } else if (textOne == "Los Angeles, CA") {
-							 document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-											document.getElementById("hometown").style.display = "block";
-
-						 } else if (textOne == "Houston, TX") {
-							 document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
-											document.getElementById("hometown").style.display = "block";
-
-						 }
-
-
-
-
-
-					 }
-
-				 </script>
 
 	</body>
 </html>
