@@ -3,6 +3,10 @@
 # [Tempest](https://tempestai.tech/)
 Using ML to prepare for storms and disasters
 
+- **1st Place Overall, Internship Winner @ FlareHacks 2020**
+
+- **1st Place Overall, Internship Winner @ Modhacks 2020**
+
 Demo: https://youtu.be/JZ7cbPsaiOA
 
 Devpost: https://devpost.com/software/tempest-awycgp
