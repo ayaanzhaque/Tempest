@@ -7,6 +7,8 @@ Using ML to prepare for storms and disasters
 
 - **1st Place Overall, Internship Winner @ Modhacks 2020**
 
+- **3rd Place Overall @ HarmonyHacks 2.0 2020**
+
 Demo: https://youtu.be/JZ7cbPsaiOA
 
 Devpost: https://devpost.com/software/tempest-awycgp
